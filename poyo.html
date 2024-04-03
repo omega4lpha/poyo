@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF en Loop Infinito</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .gif-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .gif-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: loop-gif 5s infinite; /* Cambia el tiempo de 5s si quieres que el GIF se repita a una velocidad diferente */
+    }
+
+    @keyframes loop-gif {
+      0% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="gif-container">
+    <img src="https://s1.ezgif.com/tmp/ezgif-1-1bc0797aea.gif" alt="GIF en Loop Infinito">
+  </div>
+</body>
+</html>
